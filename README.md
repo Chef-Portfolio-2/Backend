@@ -7,18 +7,7 @@
   * [Register](#register)    
   * [Login](#login)    
 - [User Routes](#user-routes)
-  * [Get Users](#get-users)    
-  * [Get User](#get-user)
-  * [Get Projects by User ID](#get-projects-by-user-id)
-  * [Delete User](#delete-user)
-  * [Update User](#update-user)
-- [Project Routes](#project-routes)
-  * [Create Project](#create-project)    
-  * [Get Projects](#get-projects)    
-  * [Get Projects](#get-projects-1)    
-  * [Update Project](#update-project)    
-  * [Delete Project](#delete-project)
-    
+  * [Get Users](#get-users)
 
 ## API Documentation
 
