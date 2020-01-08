@@ -8,8 +8,8 @@ router.post('/register', async (req, res) => {
   let user = req.body;
   const hash = bcrypt.hashSync(user.password, 14);
   user.password = hash;
-  if (!user.username || !user.password || !user.email || !user.location){
-    res.status(400).json({ message: "Please enter a username, password, email and location." })
+  if (!user.first_name || !user.last_name || !user.username || !user.password || !user.email || !user.location){
+    res.status(400).json({ message: "Please complete all input fields." })
   }
   try {
     const saved = await Users.add(user);
@@ -29,7 +29,7 @@ router.post('/login', async (req, res) => {
     const user = await Users.findBy({ username }).first();
     if(user && bcrypt.compareSync(password, user.password)) {
       const token = genToken(user);
-      res.status(200).json({ message: `Welcome ${user.username}`, token: token });
+      res.status(200).json({ message: `Welcome ${user.first_name} (${user.username})`, token: token });
     } else {
       res.status(401).json({ message: 'Invalid Credentials.' })
     }
