@@ -1,6 +1,7 @@
 exports.seed = function(knex, Promise) {
   return knex("posts").insert([
     {
+      chef_name: "chef",
       title: "Macaroni and Cheese",
       photo:
         "https://images.pexels.com/photos/806357/pexels-photo-806357.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
