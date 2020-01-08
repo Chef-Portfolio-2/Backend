@@ -21,6 +21,8 @@ https://chef-portfolio-2.herokuapp.com/
 ```
 Users: [
   {
+    "first_name": "testing",
+    "last_name": "testing",
     "username": "chef",
     "password": "password"
     "email": "chef@email.com",
@@ -44,17 +46,21 @@ _Method URL:_ `/api/auth/register`
 _HTTP Method:_ **[POST]**
 
 #### Request Body 
-| Name       |  Type  | Required |     Description |
-| ---------  | :----: | -------: | --------------: |
-| `username` | String |      Yes | Must be unique. |
-| `password` | String |      Yes |                 |
-| `email`    | String |      Yes |                 |
-| `location` | String |      Yes |                 |
+| Name         |  Type  | Required |     Description |
+| ---------    | :----: | -------: | --------------: |
+| `first_name` | String |      Yes |                 |
+| `last_name`  | String |      Yes |                 |
+| `username`   | String |      Yes | Must be unique. |
+| `password`   | String |      Yes |                 |
+| `email`      | String |      Yes |                 |
+| `location`   | String |      Yes |                 |
 
 #### Examples
 
 ```
 {
+  "first_name": "testing",
+  "last_name": "testing",
   "username": "chef",
   "password": "password",
   "email": "chef@email.com",
