@@ -185,7 +185,7 @@ _HTTP Method:_ **[GET]**
 
 ### Creates a post with a chef name, title, photo, meal type, ingredients and instructions.
 
-_Method URL:_ `/posts`
+_Method URL:_ `/api/posts`
 
 _HTTP Method:_ **[POST]**
 
@@ -242,13 +242,13 @@ _HTTP Method:_ **[POST]**
 
 ### Gets a list of posts.
 
-_Method URL:_ `/posts`
+_Method URL:_ `/api/posts`
 
 _HTTP Method:_ **[GET]**
 
 #### Headers
 
-No headers needed. `/posts` is not a protected path.
+No headers needed. `/api/posts` is not a protected path.
 
 #### Response
 
@@ -268,13 +268,13 @@ No headers needed. `/posts` is not a protected path.
 
 ### Gets post by ID.
 
-_Method URL:_ `/posts/:id`
+_Method URL:_ `/api/posts/:id`
 
 _HTTP Method:_ **[GET]**
 
 #### Headers
 
-No headers needed. `/posts/:id` is not a protected path.
+No headers needed. `/api/posts/:id` is not a protected path.
 
 #### Response
 
@@ -294,7 +294,7 @@ No headers needed. `/posts/:id` is not a protected path.
 
 ### Updates post by ID.
 
-_Method URL:_ `/posts/:id`
+_Method URL:_ `/api/posts/:id`
 
 _HTTP Method:_ **[PUT]**
 
@@ -351,7 +351,7 @@ _HTTP Method:_ **[PUT]**
 
 ### Deletes post by ID.
 
-_Method URL:_ `/posts/:id`
+_Method URL:_ `/api/posts/:id`
 
 _HTTP Method:_ **[DELETE]**
 
